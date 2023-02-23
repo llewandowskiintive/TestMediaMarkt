@@ -1,0 +1,21 @@
+{
+  "name": "TestMediaMarkt",
+  "version": "1.0.0",
+  "description": "Exam for MediaMarkt",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llewandowskiintive/TestMediaMarkt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llewandowskiintive/TestMediaMarkt/issues"
+  },
+  "homepage": "https://github.com/llewandowskiintive/TestMediaMarkt#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.31.1"
+  }
+}
