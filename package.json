@@ -17,5 +17,8 @@
   "homepage": "https://github.com/llewandowskiintive/TestMediaMarkt#readme",
   "devDependencies": {
     "@playwright/test": "^1.31.1"
+  },
+  "dependencies": {
+    "npm": "^9.5.1"
   }
 }
