@@ -8,11 +8,11 @@ test('User can add new element to ToDo List', async ({ page }) => {
 
     await todoListPage.open();
 
-    const a = await todoListPage.writeAndReturnHowManyItemsInToDo();
+    let baseElementsNumber = await todoListPage.returnHowManyItemsInToDo();
     await todoListPage.addNewToDo(newToDo);
-    await todoListPage.writeAndReturnHowManyItemsInToDo();
+    await todoListPage.returnHowManyItemsInToDo();
     await expect(page.getByText(newToDo)).toBeVisible();
-    await expect(page.locator('li')).toHaveCount(a+1);
+    await expect(todoListPage.todoItemsElements).toHaveCount(baseElementsNumber+1);
     await todoListPage.deleteToDoByName(newToDo);
-    await todoListPage.writeAndReturnHowManyItemsInToDo();
+    await todoListPage.returnHowManyItemsInToDo();
   });
